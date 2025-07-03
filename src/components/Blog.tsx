@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   const blogPosts = [
@@ -113,10 +114,12 @@ const Blog = () => {
               </CardContent>
 
               <CardFooter>
-                <Button variant="ghost" className="w-full group/button">
-                  Read More
-                  <ArrowRight className="h-4 w-4 ml-2 group-hover/button:translate-x-1 transition-transform" />
-                </Button>
+                <Link to={`/blog/${post.id}`} className="w-full">
+                  <Button variant="ghost" className="w-full group/button">
+                    Read More
+                    <ArrowRight className="h-4 w-4 ml-2 group-hover/button:translate-x-1 transition-transform" />
+                  </Button>
+                </Link>
               </CardFooter>
             </Card>
           ))}
