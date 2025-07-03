@@ -35,7 +35,7 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-6">
             <a href="#services" className="text-foreground hover:text-primary transition-colors">Services</a>
             <a href="#about" className="text-foreground hover:text-primary transition-colors">About</a>
-            <a href="#blog" className="text-foreground hover:text-primary transition-colors">Blog</a>
+            <a href="/blog" className="text-foreground hover:text-primary transition-colors">Blog</a>
             <a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact</a>
           </nav>
 
@@ -66,7 +66,7 @@ const Header = () => {
             <nav className="flex flex-col space-y-4 mt-4">
               <a href="#services" className="text-foreground hover:text-primary transition-colors">Services</a>
               <a href="#about" className="text-foreground hover:text-primary transition-colors">About</a>
-              <a href="#blog" className="text-foreground hover:text-primary transition-colors">Blog</a>
+              <a href="/blog" className="text-foreground hover:text-primary transition-colors">Blog</a>
               <a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact</a>
               <div className="flex flex-col space-y-2 pt-4">
                 <Button variant="electric" size="sm" onClick={callPhone}>
